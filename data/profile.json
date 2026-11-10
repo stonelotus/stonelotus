@@ -1,0 +1,208 @@
+{
+  "handle": "stonelotus",
+  "fullName": "Constantin-Iulian",
+  "company": "EndSpec",
+  "companyUrl": "https://www.endspec.net",
+  "pitch": "I build products end to end, and at EndSpec we fix, harden and scale AI-built software.",
+  "roles": [
+    "Builder",
+    "DevOps Engineer",
+    "Software Engineer",
+    "Founder @ EndSpec"
+  ],
+  "links": {
+    "linkedin": {
+      "label": "LinkedIn",
+      "handle": "constantin-iulian-radoi",
+      "url": "https://www.linkedin.com/in/constantin-iulian-radoi-790ba5197/"
+    },
+    "email": {
+      "label": "Email",
+      "handle": "iulian@endspec.net",
+      "url": "mailto:iulian@endspec.net"
+    },
+    "endspec": {
+      "label": "EndSpec",
+      "handle": "endspec.net",
+      "url": "https://www.endspec.net"
+    },
+    "github": {
+      "label": "GitHub",
+      "handle": "@stonelotus",
+      "url": "https://github.com/stonelotus"
+    }
+  },
+  "capabilities": [
+    {
+      "title": "Ship products end to end",
+      "body": "web, mobile and backend, from first commit to launch"
+    },
+    {
+      "title": "Run the infrastructure",
+      "body": "CI/CD, containers, Linux boxes, self-hosted services"
+    },
+    {
+      "title": "Rescue AI-built code",
+      "body": "fix, harden and scale it, with the work shown in public"
+    }
+  ],
+  "hobbies": [
+    {
+      "name": "craft",
+      "caption": "making things properly, end to end"
+    },
+    {
+      "name": "learn",
+      "caption": "always one new tool, paper or skill in progress"
+    }
+  ],
+  "dailyRings": [
+    "craft",
+    "learn",
+    "ship"
+  ],
+  "projects": [
+    {
+      "name": "MainQuest",
+      "oneLiner": "Real life, rendered as an RPG: a gamified productivity app",
+      "stack": [
+        "Flutter",
+        "Next.js",
+        "Nx"
+      ],
+      "url": "https://www.mainquest.net",
+      "status": "live"
+    },
+    {
+      "name": "SlateNode",
+      "oneLiner": "Writer-first editor with AI in the margin, as proposals",
+      "stack": [
+        "Next.js",
+        "Fastify",
+        "Elasticsearch"
+      ],
+      "url": null,
+      "status": "private"
+    },
+    {
+      "name": "Overload",
+      "oneLiner": "Progressive-overload gym tracker",
+      "stack": [
+        "Next.js",
+        "TypeScript"
+      ],
+      "url": null,
+      "status": "private"
+    },
+    {
+      "name": "saas-base",
+      "oneLiner": "Production-ready SaaS starter: auth, billing, analytics, email",
+      "stack": [
+        "Nx",
+        "Next.js",
+        "TypeScript"
+      ],
+      "url": null,
+      "status": "private"
+    },
+    {
+      "name": "meibun",
+      "oneLiner": "Just a rather very intelligent system: a personal assistant stack",
+      "stack": [
+        "Python",
+        "Shell"
+      ],
+      "url": null,
+      "status": "private"
+    },
+    {
+      "name": "Agents Office",
+      "oneLiner": "An isometric 3D office where AI agents do the work",
+      "stack": [
+        "Three.js",
+        "TypeScript"
+      ],
+      "url": null,
+      "status": "private"
+    }
+  ],
+  "stack": {
+    "orbits": {
+      "inner": [
+        "typescript",
+        "react",
+        "nodedotjs",
+        "python"
+      ],
+      "middle": [
+        "nextdotjs",
+        "flutter",
+        "docker",
+        "githubactions",
+        "elasticsearch"
+      ],
+      "outer": [
+        "linux",
+        "fastify",
+        "threedotjs",
+        "claude",
+        "go",
+        "tailscale"
+      ],
+      "moons": {
+        "host": "react",
+        "moons": [
+          "nextdotjs",
+          "tailwindcss"
+        ]
+      }
+    },
+    "groups": [
+      {
+        "name": "Frontend & Mobile",
+        "icons": [
+          "typescript",
+          "react",
+          "nextdotjs",
+          "tailwindcss",
+          "flutter",
+          "dart"
+        ]
+      },
+      {
+        "name": "Backend & Data",
+        "icons": [
+          "nodedotjs",
+          "fastify",
+          "python",
+          "go",
+          "elasticsearch",
+          "turso"
+        ]
+      },
+      {
+        "name": "DevOps & Infra",
+        "icons": [
+          "docker",
+          "linux",
+          "githubactions",
+          "nx",
+          "hetzner",
+          "tailscale",
+          "vercel"
+        ]
+      },
+      {
+        "name": "Motion, 3D & AI",
+        "icons": [
+          "threedotjs",
+          "greensock",
+          "claude",
+          "anthropic",
+          "googlegemini"
+        ]
+      }
+    ]
+  },
+  "now": "building SlateNode and MainQuest at EndSpec"
+}

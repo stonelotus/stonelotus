@@ -1,0 +1,62 @@
+name: profile
+
+# Daily: rebuild the 3D contribution city and the live ID/dashboard card.
+on:
+  schedule:
+    - cron: "17 3 * * *" # 03:17 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - data/profile.json
+      - scripts/**
+      - assets/**
+      - shared/**
+      - .github/workflows/profile.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Writes profile-3d-contrib/*.svg. Private work only shows if
+      # "Include private contributions on my profile" is on (Settings → Public profile).
+      - name: 3D contribution city
+        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      # PROFILE_TOKEN (optional, a fine-grained PAT with read access to your repos)
+      # lets the stats include private repos; without it, private-derived numbers are kept as-is.
+      - name: Refresh stats and rebuild dashboard
+        env:
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node scripts/fetch-stats.mjs
+          node scripts/build-dashboard.mjs
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A profile-3d-contrib id-dashboard.svg data/stats.json
+          if git diff --cached --quiet; then
+            echo "nothing changed"
+          else
+            git commit -m "chore: daily profile refresh"
+            git push
+          fi

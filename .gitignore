@@ -1,0 +1,8 @@
+_artifacts/
+_check/
+.DS_Store
+explore/
+.impeccable/
+node_modules/
+_source/
+.venv/
