@@ -183,7 +183,7 @@
 <circle class="tg-pulse" cx="484" cy="552" r="7" fill="#00E0FF"/>
 <circle cx="484" cy="552" r="5" fill="#00E0FF"/>
 <text x="502" y="558" class="tg-hud" font-size="18" letter-spacing="3" fill="#00E0FF">CURRENT QUEST</text>
-<text x="1112" y="558" text-anchor="end" class="tg-n5" font-size="18" fill="#B8A98C">updated 2026-11-10</text>
+<text x="1112" y="558" text-anchor="end" class="tg-n5" font-size="18" fill="#B8A98C">updated 2026-11-11</text>
 <text x="480" y="598" class="tg-now">building SlateNode and MainQuest at EndSpec</text>
 </g>
 <rect x="1.5" y="1.5" width="1197" height="667" rx="17" fill="none" stroke="#7E611F" stroke-opacity=".8" stroke-width="3"/>

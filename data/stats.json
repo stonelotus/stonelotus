@@ -1,12 +1,12 @@
 {
   "_note": "Seeded locally with an owner token (includes private repos). The daily workflow refreshes public fields; private-derived fields (commits12mo, repos, languages) only update when PROFILE_TOKEN is set.",
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "commits12mo": 3264,
   "commitsAllTime": 5079,
   "repos": 35,
   "since": 2021,
   "followers": 3,
-  "contributions12mo": 2,
+  "contributions12mo": 3,
   "languages": [
     ["TypeScript", 57.1],
     ["Dart", 17.4],
